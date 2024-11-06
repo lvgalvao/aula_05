@@ -24,6 +24,11 @@ O usuário deve:
     print(f"Olá {nome}, o seu valor foi de {bonus_total}")
 ```
 
+```mermaid
+flowchart TD
+    Etapa 1 --> Etapa 2 --> Etapa 3
+```
+
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |

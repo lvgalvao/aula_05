@@ -25,9 +25,20 @@ O usuário deve:
 ```
 
 ```mermaid
-flowchart TD
-    Start([Início]) --> Processo{Processo}
-    Processo --> Stop([Fim])
+sequenceDiagram
+    participant Usuário
+    participant Sistema
+
+    Usuário->>Sistema: Inicia o programa
+    Sistema->>Usuário: "Bem vindo ao sistema de bonus da Sabesp"
+    Usuário->>Sistema: Digita o nome
+    Sistema->>Usuário: Solicita o salário
+    Usuário->>Sistema: Digita o salário
+    Sistema->>Usuário: Solicita o bônus
+    Usuário->>Sistema: Digita o bônus
+
+    Sistema->>Sistema: Calcula bonus_total = 1000 + salario * bonus
+    Sistema->>Usuário: Exibe mensagem com o valor de bonus_total
 ```
 
 | Tables        | Are           | Cool  |

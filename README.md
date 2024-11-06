@@ -25,11 +25,9 @@ O usuário deve:
 ```
 
 ```mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Bob->>Alice: Hi Alice
-    Alice->>Bob: Hi Bob
+flowchart TD
+    Start([Início]) --> Processo{Processo}
+    Processo --> Stop([Fim])
 ```
 
 | Tables        | Are           | Cool  |

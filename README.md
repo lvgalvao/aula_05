@@ -25,9 +25,11 @@ O usuário deve:
 ```
 
 ```mermaid
-flowchart TD
-    Etapa 1 --> Etapa 2
-    Etapa 2 --> Etapa 3
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Bob->>Alice: Hi Alice
+    Alice->>Bob: Hi Bob
 ```
 
 | Tables        | Are           | Cool  |
